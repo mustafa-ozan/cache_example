@@ -59,8 +59,12 @@ int main()
          for(int i = 0; i < 4; i++){
             l2[i + tmp4 * 4] = l1[i];
          }
+         l1[3] = temp;
 
       }
+
+      if( (total_input % 4))
+         l1[total_input % 4 - 1] = temp;
 
       printf("If no more input please press 0, else press 1\n");
       scanf("%d",&loop_close);
