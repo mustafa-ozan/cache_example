@@ -18,6 +18,7 @@ int main()
 
       printf("please enter input\n");
       scanf("%d",&temp);
+      printf("entered input is %d\n", temp);
       total_input++;
 
       if( total_input > 960000){
@@ -59,6 +60,7 @@ int main()
          for(int i = 0; i < 4; i++){
             l2[i + tmp4 * 4] = l1[i];
          }
+
          l1[3] = temp;
 
       }
@@ -68,6 +70,7 @@ int main()
 
       printf("If no more input please press 0, else press 1\n");
       scanf("%d",&loop_close);
+      printf("loop choice is %d\n", loop_close);
    }
     
    printf("l3 cache\n");
