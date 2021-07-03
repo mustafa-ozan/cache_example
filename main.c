@@ -27,7 +27,7 @@ int main()
 
       if( ! (total_input % 96) ){
 
-         tmp96 = total_input ÷ 96 - 1;
+         tmp96 = total_input / 96 - 1;
 
          for(int i = 0; i < 96; i++){
             ram[i + tmp96 * 96] = l3[i];
@@ -40,7 +40,7 @@ int main()
             tmp16 = 5;
 
          else
-            tmp16 = (total_input % 96) ÷ 16 - 1;       
+            tmp16 = (total_input % 96) / 16 - 1;       
 
          for(int i = 0; i < 16; i++){
             l3[i + tmp16 * 16] = l2[i];
@@ -54,7 +54,7 @@ int main()
             tmp4 = 3;
 
          else
-            tmp4 = (total_input % 16) ÷ 4 - 1;       
+            tmp4 = (total_input % 16) / 4 - 1;       
 
          for(int i = 0; i < 4; i++){
             l2[i + tmp4 * 4] = l1[i];
