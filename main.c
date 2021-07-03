@@ -4,10 +4,10 @@
 
 int main()
 {
-   int * l1  = calloc (4 * sizeof(int));
-   int * l2  = calloc (16 * sizeof(int));
-   int * l3  = calloc (96 * sizeof(int));
-   int * ram = calloc (960000 * sizeof(int));
+   int * l1  = (int *) calloc (4 * sizeof(int));
+   int * l2  = (int *) calloc (16 * sizeof(int));
+   int * l3  = (int *) calloc (96 * sizeof(int));
+   int * ram = (int *) calloc (960000 * sizeof(int));
 
    int temp = 0;
    int loop_close = 1;
