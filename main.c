@@ -48,14 +48,41 @@ int main()
 
       }
 
+      if( ! (total_input % 4) ){
+
+         if( ! (total_input % 16) )
+            tmp4 = 3;
+
+         else
+            tmp4 = (total_input % 16) ÷ 4 - 1;       
+
+         for(int i = 0; i < 4; i++){
+            l2[i + tmp4 * 4] = l1[i];
+         }
+
+      }
+
       printf("If no more input please press 0, else press 1\n");
       scanf("%d",&loop_close);
-
    }
     
+   printf("l3 cache\n");
+   for(int i = 0; i < 96; i++){
+      printf("%d ", l3[i]);
+   }
+   printf("\n");
 
+   printf("l2 cache\n");
+   for(int i = 0; i < 16; i++){
+      printf("%d ", l2[i]);
+   }
+   printf("\n");
 
-
+   printf("l1 cache\n");
+   for(int i = 0; i < 4; i++){
+      printf("%d ", l1[i]);
+   }
+   printf("\n");
 
    return 0;
 }
